@@ -31,11 +31,11 @@ Feel free to fork it and translate it if you need.
 
 ## Installation
 
-1. Run `npm i AnonDev-org/discord-tickets_transcripts --no-save`
-2. Add `AnonDev-org.discord-tickets_transcripts` to the `plugins` array in your bot's config file (`./user/config.js`):
+1. Run `npm i SukiPlayz/discord-tickets_transcripts --no-save`
+2. Add `SukiPlayz.discord-tickets_transcripts` to the `plugins` array in your bot's config file (`./user/config.js`):
    ```js
    plugins: [
-   	'AnonDev-org.discord-tickets_transcripts'
+   	'SukiPlayz.discord-tickets_transcripts'
    ]
    ```
 3. Add a new property to your config file:
@@ -45,7 +45,7 @@ Feel free to fork it and translate it if you need.
    	defaults: {
    		// ...
    	},
-   	'AnonDev-org.discord-tickets_transcripts': {
+   	'SukiPlayz.discord-tickets_transcripts': {
    		channels: {
    			'<GUILD ID>': '<GUILD CHANNEL ID>'
    		},
@@ -78,7 +78,7 @@ Check Installation for example how to configure the plugin, the available option
 ## Updating plugin
 It's really simple, just reinstall it using npm and restart your bot.
 
-- Run `npm i AnonDev-org/discord-tickets_transcripts --no-save`
+- Run `npm i SukiPlayz/discord-tickets_transcripts --no-save`
 
 
 ## Information
