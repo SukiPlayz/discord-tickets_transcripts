@@ -73,9 +73,8 @@ module.exports = (Plugin) =>
         }
 
         lines.push(
-          `Ticket Transcripts plugin v${
-            require("./package.json").version
-          } by AnonDev (https://anon.is-a.dev)\n-----------------------------------------------------------------------------------\nID: ${
+           `Necro Tickets Transcripts
+	   \n-----------------------------------------------------------------------------------\nID: ${
             ticket.number
           } (#${channel_name})\nCategory: ${
             category.name || "?"
