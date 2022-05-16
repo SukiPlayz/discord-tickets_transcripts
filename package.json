@@ -1,5 +1,5 @@
 {
-  "name": "AnonDev-org.discord-tickets_transcripts",
+  "name": "SukiPlayz.discord-tickets_transcripts",
   "version": "1.2.5",
   "description": "A simple plugin for Discord Tickets which adds ticket transcripts (with ticket close logging).",
   "main": "index.js",
@@ -10,12 +10,12 @@
     "type": "git",
     "url": "git+https://github.com/discord-tickets/text-transcripts.git"
   },
-  "author": "AnonDev (https://anon.is-a.dev/ )",
+  "author": "SukiPlayz (https://suki.is-a.dev/ )",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AnonDev-org/discord-tickets_transcripts/issues"
+    "url": "https://github.com/SukiPlayz/discord-tickets_transcripts/issues"
   },
-  "homepage": "https://github.com/AnonDev-org/discord-tickets_transcripts#readme",
+  "homepage": "https://github.com/SukiPlayz/discord-tickets_transcripts#readme",
   "dependencies": {
     "@eartharoid/dtf": "^2.0.0",
     "discord.js": "^13.2.0",
