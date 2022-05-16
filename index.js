@@ -16,7 +16,6 @@ module.exports = (Plugin) =>
 
     preload() {
       this.config = this.client.config[this.id];
-      checkUpdates(this.client)
 
       this.client.tickets.on("close", async (id) => {
         const ticket = await this.client.db.models.Ticket.findOne({
