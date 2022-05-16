@@ -375,43 +375,6 @@ const isValidUrl = (s, protocols) => {
 };
 
 
-const checkUpdates = async (client) => {
-  const boxen = require('boxen');
-  const link = require('terminal-link');
-  const semver = require('semver');
-  const { format } = require('leekslazylogger');
-
-  const json =  (await axios({
-    method: "GET",
-    url: 'https://api.github.com/repos/AnonDev-org/discord-tickets_transcripts/releases',
-    responseType: "json"
-  })).data;
-  
-  const { version: current } = require('./package.json');
-	const update = json[0];
-  const latest = semver.coerce(update.tag_name);
-  if (!semver.valid(latest)) return;
-  if (semver.lt(current, latest)) {
-		client.log.notice(`There is an update available for Ticket Transcripts plugin by AnonDev (${current} -> ${update.tag_name})`);
-
-		const lines = [
-			`&k&6You are currently using &c${current}&6, the latest is &a${update.tag_name}&6.&r`,
-			`&k&6Download "&f${update.name}&6" from&r`,
-			link('&k&6the GitHub releases page.&r&6', 'https://github.com/AnonDev-org/discord-tickets_transcripts/releases/')
-		];
-
-		console.log(
-			boxen(format(lines.join('\n')), {
-				align: 'center',
-				borderColor: 'yellow',
-				borderStyle: 'round',
-				margin: 1,
-				padding: 1
-			})
-		);
-	}
-
-};
 
 
 Array.prototype.contains = function (obj) {
